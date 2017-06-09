@@ -32,6 +32,7 @@ In order to verify the different implementations, we provide a series of test ve
   * Parse `fulfillment` and generate the fingerprint contents
   * Parse `fulfillment`, generate the condition, serialize the condition as a URI, should match `conditionUri`.
   * Create fulfillment from `json`, serialize fulfillment, should match `fulfillment`.
+  * For signature-based types: generate the signature and check that it matches the given signature.
 
   If a `message` field is provided, the condition should be evaluated against the message. Otherwise, an empty message should be passed to the verification function.
 
